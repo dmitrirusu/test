@@ -1,0 +1,23 @@
+group 'missito-admin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.sparkjava:spark-core:2.5.4'
+    compile 'ch.qos.logback:logback-classic:0.9.26'
+    compile 'com.google.firebase:firebase-admin:5.1.0'
+    compile 'io.jsonwebtoken:jjwt:0.7.0'
+    compile 'com.jcabi:jcabi-jdbc:0.16'
+    compile 'com.zaxxer:HikariCP:2.5.1'
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1206-jdbc42'
+    compile 'com.google.firebase:firebase-admin:5.2.0'
+    compile group: 'org.tarantool', name: 'connector', version: '1.7.2'
+}

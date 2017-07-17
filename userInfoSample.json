@@ -1,0 +1,51 @@
+{
+  "phone": "373xx xxx xx",
+  "online": true,
+  "otpKeyCount": 100,
+  "friends": [
+    "373xx xxx xx",
+    "373xx xxx xx",
+    "373xx xxx xx",
+    "373xx xxx xx",
+    "373xx xxx xx",
+    "373xx xxx xx"
+  ],
+  "cloudTokens": [
+    {
+      "deviceId": "id",
+      "deviceType": "google",
+      "token": "token"
+    },
+    {
+      "deviceId": "id",
+      "deviceType": "google",
+      "token": "token"
+    },
+    {
+      "deviceId": "id",
+      "deviceType": "google",
+      "token": "token"
+    }
+  ],
+  "lastSeen": "132456",
+  "profileSettings": {
+    "presenceStatus": 1,
+    "messageStatus": 0
+  },
+  "messages": [
+    {
+      "msgId": "id",
+      "senderId": "sender",
+      "receiverId": "receiver",
+      "status": "status",
+      "time": "time"
+    },
+    {
+      "msgId": "id",
+      "senderId": "sender",
+      "receiverId": "receiver",
+      "status": "status",
+      "time": "time"
+    }
+    ]
+}

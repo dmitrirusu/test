@@ -1,0 +1,62 @@
+20170714 15:47:10.263 [main] INFO  Service - Starting.
+20170714 15:47:10.339 [main] INFO  APIService - Starting.
+20170714 15:47:10.351 [Thread-3] INFO  s.s.StaticFilesConfiguration - External StaticResourceHandler configured with folder = /home/usr1/projects/missito-backend/WebUI/webUIFrontend/
+20170714 15:47:10.352 [Thread-3] WARN  s.s.StaticFilesFolder - Registering external static files folder [/home/usr1/projects/missito-backend/WebUI/webUIFrontend/] as [/home/usr1/projects/missito-backend/WebUI/webUIFrontend].
+20170714 15:52:59.464 [qtp1821047335-22] ERROR Helper - Could not parse file
+java.io.FileNotFoundException: userInfoSample.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_131]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[na:1.8.0_131]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_131]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[na:1.8.0_131]
+	at java.io.FileReader.<init>(FileReader.java:58) ~[na:1.8.0_131]
+	at webui.util.Helper.readJson(Helper.java:38) ~[main/:na]
+	at webui.Controllers.UserController.lambda$getProfile$1(UserController.java:29) [main/:na]
+	at spark.RouteImpl$1.handle(RouteImpl.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:128) ~[spark-core-2.5.4.jar:na]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.5.4.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) ~[jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) ~[jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) ~[jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+20170714 15:53:42.702 [qtp1821047335-24] ERROR Helper - Could not parse file
+java.io.FileNotFoundException: userInfoSample.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_131]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[na:1.8.0_131]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_131]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[na:1.8.0_131]
+	at java.io.FileReader.<init>(FileReader.java:58) ~[na:1.8.0_131]
+	at webui.util.Helper.readJson(Helper.java:38) ~[main/:na]
+	at webui.Controllers.UserController.lambda$getProfile$1(UserController.java:29) [main/:na]
+	at spark.RouteImpl$1.handle(RouteImpl.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.5.4.jar:na]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:128) ~[spark-core-2.5.4.jar:na]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.5.4.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) ~[jetty-server-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) ~[jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) ~[jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) ~[jetty-io-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) ~[jetty-util-9.3.6.v20151106.jar:9.3.6.v20151106]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+20170714 15:54:53.401 [main] INFO  Service - Starting.
+20170714 15:54:53.468 [main] INFO  APIService - Starting.
+20170714 15:54:53.480 [Thread-3] INFO  s.s.StaticFilesConfiguration - External StaticResourceHandler configured with folder = /home/usr1/projects/missito-backend/WebUI/webUIFrontend/
+20170714 15:54:53.481 [Thread-3] WARN  s.s.StaticFilesFolder - Registering external static files folder [/home/usr1/projects/missito-backend/WebUI/webUIFrontend/] as [/home/usr1/projects/missito-backend/WebUI/webUIFrontend].

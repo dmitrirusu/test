@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="5 seconds">
+  <property name="logDir" value="logs/" />
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>%date{yyyyMMdd HH:mm:ss.SSS} [%thread] %-5level %logger{15} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>DEBUG</level>
+    </filter>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${logDir}%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>%date{yyyyMMdd HH:mm:ss.SSS} [%thread] %-5level %logger{15} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <root level="DEBUG">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
+  </root>
+
+  <logger name="org.eclipse.jetty" level="WARN"/>
+  <logger name="spark.Request" level="WARN"/>
+  <logger name="org.asynchttpclient.netty" level="WARN"/>
+  <logger name="com.zaxxer.hikari" level="WARN"/>
+
+  <logger name="spark.route.Routes" level="WARN"/>
+  <logger name="com.jcabi.jdbc" level="WARN"/>
+  <logger name="com.jcabi.aspects" level="WARN"/>
+  <logger name="com.zaxxer.hikari" level="WARN"/>
+  <logger name="spark.embeddedserver.jetty" level="WARN"/>
+
+</configuration>

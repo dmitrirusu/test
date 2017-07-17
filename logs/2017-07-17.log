@@ -1,0 +1,4 @@
+20170717 09:55:14.836 [main] INFO  Service - Starting.
+20170717 09:55:14.911 [main] INFO  APIService - Starting.
+20170717 09:55:14.924 [Thread-3] INFO  s.s.StaticFilesConfiguration - External StaticResourceHandler configured with folder = /home/usr1/projects/missito-backend/WebUI/webUIFrontend/
+20170717 09:55:14.925 [Thread-3] WARN  s.s.StaticFilesFolder - Registering external static files folder [/home/usr1/projects/missito-backend/WebUI/webUIFrontend/] as [/home/usr1/projects/missito-backend/WebUI/webUIFrontend].
